@@ -1,1 +1,1 @@
-# Automate_Docker_packer-ecr-docker
+# Automate_Docker_ECR_Packer
