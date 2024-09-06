@@ -43,7 +43,7 @@ jobs:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       run: |
-        aws ecr get-login-password --region $AWS_REGION | docker login --username AWS --password-stdin 654654158468.dkr.ecr.$AWS_REGION.amazonaws.com
+        aws ecr get-login-password --region $AWS_REGION | docker login --username AWS --password-stdin 373160674113.dkr.ecr.$AWS_REGION.amazonaws.com
 
     - name: Tag Docker Image for ECR
       run: |
@@ -53,5 +53,5 @@ jobs:
 
     - name: Push Docker Image to AWS ECR
       run: |
-        docker push 654654158468.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/docker-image:latest
-        docker push 654654158468.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/docker-image:v1.0.0
+        docker push 373160674113.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/docker-image:latest
+        docker push 373160674113.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/docker-image:v1.0.0
